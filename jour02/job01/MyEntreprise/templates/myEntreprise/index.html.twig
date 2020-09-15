@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+{% for projet in projets %}
+<div>
+    <h1>{{ projet.title }}</h1>
+    <p>Publié le {{ projet.createdAt|date('d/m/Y à h:i') }} </p>
+    <img src="{{ projet.image }}" /></br>
+    <p>{{ projet.content }}</p>
+</div>
+<hr class="my-4">
+{% endfor %}
+{% endblock %}
+
+

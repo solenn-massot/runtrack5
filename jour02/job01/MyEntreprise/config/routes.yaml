@@ -1,0 +1,3 @@
+index:
+   path: /myentreprise
+   controller: App\Controller\MyEnrepriseController::index
