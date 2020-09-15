@@ -6,6 +6,7 @@
     <p>Publié le {{ projet.createdAt|date('d/m/Y à h:i') }} </p>
     <img src="{{ projet.image }}" /></br>
     <div>{{ projet.content|raw }}</div>
+    <a class="btn btn-outline-primary" href="{{ path('project_page', { 'id': projet.id }) }}">Voir le projet</a>
 </div>
 <hr class="my-4">
 {% endfor %}
